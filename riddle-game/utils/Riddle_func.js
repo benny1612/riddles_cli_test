@@ -20,7 +20,7 @@ function no_choices_r(riddleObj){
         let answer = input("enter an answer : ")
         switch(answer){
                 case riddleObj.correctAnswer:
-                    console.log("good")
+                    console.log("good answer!")
                     flag=false
                     break;
     }
@@ -36,7 +36,7 @@ export function askRiddle(riddleObj){
         
           
 
-
+// פונקציה שמודדת את הזמן ומחזירה בשניות
 export function measureSolveTime(fn,r_num){
         const startTime = performance.now()
         fn(r_num)
